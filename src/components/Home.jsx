@@ -1,4 +1,4 @@
-import heroImage from "../assets/homeImg.jpg";
+import heroImage from "../assets/hero.jpg";
 function Home() {
 	return (
 		<div className='space-y-6 p-8'>
