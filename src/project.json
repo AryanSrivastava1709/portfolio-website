@@ -1,0 +1,74 @@
+[
+	{
+		"title": "Crafted Components",
+		"description": "Developed an e-commerce platform for hardware and plywood products using Angular, Tailwind CSS, and TypeScript. Implemented a cart system with local storage and an API for data fetching.",
+		"techStack": ["Angular.js", "Tailwind CSS", "TypeScript", "Local Storage"],
+		"popCultureRef": "Inspired by the classic commerce experience with a modern twist.",
+		"img": "https://res.cloudinary.com/duajxyeqr/image/upload/v1726672791/project%20images/j9f99ykj3qncjlf2guby.png",
+		"link": "https://crafted-component.vercel.app/"
+	},
+	{
+		"title": "Quiz App",
+		"description": "A comprehensive MCQ test platform with secure user authentication using JWT, dynamic test interface, real-time answer selection, and live camera and microphone monitoring. Includes automated test evaluation and result emailing.",
+		"techStack": [
+			"React.js",
+			"Tailwind CSS",
+			"JavaScript",
+			"Local Storage",
+			"NodeJS",
+			"MongoDB",
+			"JWT",
+			"Zustand"
+		],
+		"popCultureRef": "Like a quiz show with a tech twist.",
+		"img": "https://res.cloudinary.com/duajxyeqr/image/upload/v1726672791/project%20images/ojkeaflhbkgddzifzxxe.png",
+		"link": "https://quiz-app-lemon-five.vercel.app/"
+	},
+	{
+		"title": "PagePilot",
+		"description": "A full-stack online bookstore platform using MongoDB, Express.js, React.js, and Node.js. Offers browsing, purchasing, and author promotion with modern tech stack and secure authentication.",
+		"techStack": [
+			"React.js",
+			"Node.js",
+			"MongoDB",
+			"Express.js",
+			"Tailwind CSS",
+			"Axios",
+			"Context API"
+		],
+		"popCultureRef": "Revolutionizing book discovery like never before.",
+		"img": "https://res.cloudinary.com/duajxyeqr/image/upload/v1726672791/project%20images/lawfbiffcycqjctbzdlw.png",
+		"link": "https://page-pilot.vercel.app/"
+	},
+	{
+		"title": "Whispr - Chat Application Backend",
+		"description": "A real-time chat application built with Node.js, Express, and Socket.IO. It allows users to register, log in, search for other users, add friends, and send/receive messages in real-time with Google Gemini LLM integrations and automated messaging features.",
+		"techStack": [
+			"Node.js",
+			"Express",
+			"Socket.IO",
+			"MongoDB",
+			"Google Gemini LLM"
+		],
+		"popCultureRef": "Whispr is like Jarvis, but for conversations.",
+		"img": "https://res.cloudinary.com/duajxyeqr/image/upload/v1726674513/project%20images/tf0xirhotkggkb5etcam.png",
+		"link": "https://github.com/AryanSrivastava1709/whispr"
+	},
+	{
+		"title": "FlowScript - Blog for Motivation & Guidance",
+		"description": "FlowScript is a blog dedicated to inspiring and guiding individuals through life's challenges. We offer motivational stories and practical tips to help you achieve your goals and overcome obstacles with confidence.",
+		"techStack": ["Next.js", "React.js", "Markdown", "Tailwind CSS", "MongoDB"],
+		"status": "pending",
+		"popCultureRef": "Helping you rise like the Phoenix from the ashes of life's challenges.",
+		"img": "https://res.cloudinary.com/duajxyeqr/image/upload/v1726675050/project%20images/sjzmvmmzjtklttxhw2bb.png",
+		"link": "https://flowscript.vercel.app/"
+	},
+	{
+		"title": "usePopcorn",
+		"description": "A user-friendly movie review application with a rating system, local storage for maintaining user data, and responsive design. Uses custom hooks and Tailwind CSS for an enhanced user experience.",
+		"techStack": ["React.js", "JavaScript", "Local Storage", "Tailwind CSS"],
+		"popCultureRef": "For those who take their movie watching seriously.",
+		"img": "https://res.cloudinary.com/duajxyeqr/image/upload/v1726673025/project%20images/tjrlztxvuyvck5hicuhy.png",
+		"link": "https://movie-search-tan-three.vercel.app/"
+	}
+]
