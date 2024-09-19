@@ -1,0 +1,3 @@
+add social links
+add resume
+add blog page

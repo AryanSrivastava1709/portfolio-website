@@ -77,6 +77,11 @@ function About() {
 				<li>🎮Playing PC Games.</li>
 				<li>🏸Playing badminton.</li>
 			</ul>
+			<button className='bg-green-500 text-white px-4 py-2 rounded'>
+				<a href='/12104288.pdf' download='Aryan_Srivastava.pdf'>
+					Download Resume
+				</a>
+			</button>
 			<p className='text-2xl mb-4 italic text-center'>
 				"I can do this all day." - Captain America
 			</p>

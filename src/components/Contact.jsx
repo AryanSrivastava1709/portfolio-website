@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Linkedin, Github, Instagram } from "lucide-react";
 
 function Contact() {
 	const [loading, setLoading] = useState(false);
@@ -105,6 +106,28 @@ function Contact() {
 				and acknowledge that Nick Fury may be watching. Use at your own
 				discretion, superhero! Just joking😁!!
 			</p>
+
+			<div className='flex w-full flex-col items-center justify-center'>
+				<div className='mt-10 mb-5'>
+					<p className=' text-center text-xl font-bold animate-pulse'>
+						Connect with me:
+					</p>
+				</div>
+				<div className='flex gap-5'>
+					<a
+						href='https://www.linkedin.com/in/aryan-srivastava-17ar09/'
+						target='_blank'
+					>
+						<Linkedin size={32} />
+					</a>
+					<a href='https://github.com/AryanSrivastava1709' target='_blank'>
+						<Github size={32} />
+					</a>
+					<a href='https://www.instagram.com/ara.youknow/' target='_blank'>
+						<Instagram size={32} />
+					</a>
+				</div>
+			</div>
 
 			<ToastContainer />
 		</div>
