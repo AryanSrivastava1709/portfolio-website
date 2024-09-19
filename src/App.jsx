@@ -18,7 +18,7 @@ function App() {
 		{ id: "about", icon: <User />, label: "About" },
 		{ id: "projects", icon: <Rocket />, label: "Projects" },
 		{ id: "contact", icon: <Mail />, label: "Contact" },
-		{ id: "blog", icon: <PenTool />, label: "Blog" }, // New blog section
+		{ id: "blog", icon: <PenTool />, label: "Discover" },
 	];
 
 	const handleNavigation = (sectionId) => {
