@@ -5,18 +5,32 @@ function Blog() {
 	const [topic, setTopic] = useState("Movies and Series");
 	const [isLoading, setIsLoading] = useState(false);
 	const [articles, setArticles] = useState([]);
-	const [pageSize, setPageSize] = useState(10);
+
+	const popCultureTopics = [
+		"Movies",
+		"Actors",
+		"Hollywood",
+		"Bollywood",
+		"Series",
+		"TV Shows",
+	];
+
+	const technologyTopics = [
+		"Programming Languages",
+		"Web Development",
+		"Frontend Development",
+		"Backend Development",
+		"Tech News",
+		"Computer Science",
+	];
 
 	const fetchNews = async (topic) => {
 		try {
 			setIsLoading(true);
-			const randomOffset = Math.floor(Math.random() * 100);
-			const response = await axios.get("https://newsapi.org/v2/everything", {
+			const response = await axios.get("https://gnews.io/api/v4/search", {
 				params: {
 					q: topic,
-					pageSize: pageSize,
-					page: Math.floor(randomOffset / pageSize) + 1,
-					apiKey: "d49cd14fa1fc4f1e991292b06bfa0c11",
+					apikey: "42fb606f21d0f24cc950e784d2c3754a",
 				},
 			});
 			setArticles(response.data.articles);
@@ -27,13 +41,17 @@ function Blog() {
 		}
 	};
 
+	const handleChangeTopic = (newMainTopic) => {
+		const newTopic =
+			newMainTopic === "Movies and Series"
+				? popCultureTopics[Math.floor(Math.random() * popCultureTopics.length)]
+				: technologyTopics[Math.floor(Math.random() * technologyTopics.length)];
+		setTopic(newTopic);
+	};
+
 	useEffect(() => {
 		fetchNews(topic);
 	}, [topic]);
-
-	const handleChangeTopic = (newTopic) => {
-		setTopic(newTopic);
-	};
 
 	return (
 		<div className='bg-black text-green-400 min-h-screen p-6'>
@@ -42,7 +60,7 @@ function Blog() {
 				<button
 					onClick={() => handleChangeTopic("Movies and Series")}
 					className={`px-6 py-2 rounded-full font-medium transition duration-300 ${
-						topic === "Movies and Series"
+						topic === "Movies and Series" || popCultureTopics.includes(topic)
 							? "bg-green-600 text-black"
 							: "text-green-500 border border-green-500 hover:bg-green-600 hover:text-black"
 					}`}
@@ -52,7 +70,7 @@ function Blog() {
 				<button
 					onClick={() => handleChangeTopic("Programming Languages")}
 					className={`px-6 py-2 rounded-full font-medium transition duration-300 ${
-						topic === "Programming Languages and Gadgets"
+						technologyTopics.includes(topic)
 							? "bg-green-600 text-black"
 							: "text-green-500 border border-green-500 hover:bg-green-600 hover:text-black"
 					}`}
@@ -73,7 +91,7 @@ function Blog() {
 					{/* Display topic */}
 					<div className='mt-8 flex items-center justify-center'>
 						<p className='text-2xl font-semibold border-b-4 border-green-500 pb-2 px-6 rounded-lg glow'>
-							Showing posts related to selected topic
+							Showing posts related to: {topic}
 						</p>
 					</div>
 
@@ -94,7 +112,7 @@ function Blog() {
 									{/* Display article image */}
 									<img
 										src={
-											article.urlToImage ||
+											article.image ||
 											"https://via.placeholder.com/150/000000/FFFFFF/?text=No+Image"
 										}
 										alt={article.title}
