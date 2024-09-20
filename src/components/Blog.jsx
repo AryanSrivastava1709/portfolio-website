@@ -42,7 +42,7 @@ function Blog() {
 				<button
 					onClick={() => handleChangeTopic("Movies and Series")}
 					className={`px-6 py-2 rounded-full font-medium transition duration-300 ${
-						topic === "Pop Culture"
+						topic === "Movies and Series"
 							? "bg-green-600 text-black"
 							: "text-green-500 border border-green-500 hover:bg-green-600 hover:text-black"
 					}`}
@@ -50,9 +50,9 @@ function Blog() {
 					Pop Culture
 				</button>
 				<button
-					onClick={() => handleChangeTopic("Programming Languages and Gadgets")}
+					onClick={() => handleChangeTopic("Programming Languages")}
 					className={`px-6 py-2 rounded-full font-medium transition duration-300 ${
-						topic === "Technology"
+						topic === "Programming Languages and Gadgets"
 							? "bg-green-600 text-black"
 							: "text-green-500 border border-green-500 hover:bg-green-600 hover:text-black"
 					}`}
